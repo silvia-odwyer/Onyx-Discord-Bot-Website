@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Titillium+Web|Quantico|Roboto');
+
+@font-face {
+  font-family: Titillium-Regular;
+  src: url('fonts/Titillium/Titillium-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: Titillium-Light;
+  src: url('fonts/Titillium/Titillium-Light.otf') format('otf');
+}
+
+
+body {
+  margin: 20px;
+  font-family: 'Lato';
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+input{
+  display:block;
+  margin-left: 40em;
+  margin-right: 40em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: rgb(11, 28, 30);
+  border-color: rgb(24, 112, 109);
+  color: rgb(40, 216, 209);
+  font-family: "Titillium", sans-serif;
+
+}
+header img {
+    display: inline;
+}
+
+
+/* Core  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium-Web', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+  /* background-image: url("BlurBackground.png"); */
+  background-size: cover;
+  font-family: 'Titillium', sans-serif;
+  width: 100%;
+  background-color: #201f1f;
+
+
+}
+
+p {
+  color: black;
+  font-family: 'Quantico', sans-serif
+}
+
+body {
+    font-size: 20px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px 5px #0ff;
+    padding: 2rem;
+    color: white;
+    width: 100%;
+}
+
+/* Flexbox */
+header, body, nav, .gallery, .video-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+/* Header and Footer */
+header {
+    font-size: 1.8em;
+    padding-left: 1em;
+    justify-content: space-around;
+}
+
+footer {
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+    font-size: 1em;
+}
+
+/* Global */
+aside img {
+    max-width: 100%;
+    border-radius: 2em;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+    color: #4a4a4a;
+    font-size: 1.5em;
+    font-family: 'Titillium', sans-serif;
+    font-weight: bold;
+}
+
+article h1, section h1 {
+  color: black;
+  font-family: 'Titilium Web', sans-serif;
+  font-size: 1.1em;
+}
+
+
+
+main h1 {
+    padding-left: 0.6em;
+    margin-bottom: 0.9em;
+}
+
+main li {
+    color: black;
+    margin-left: 2.1em;
+}
+
+article, section {
+    padding-top: 0em;
+    margin: 0em 1em 1em 1em;
+    /* box-shadow: 2px 2px 2px 2px #0ff; */
+    
+}
+
+p {
+    margin: 0.5em;
+    padding: 0.5em;
+    color: black;
+} 
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Only images within the textual pages, excluding images on the Gallery Page */
+article figure, section figure, article + figure {
+    text-align: centre;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+/* Container To Add Padding Around Videos */
+.video-container {
+    max-width: 100%;
+    padding: 1em;
+}
+.video-container h1 {
+	width: 100%;
+}
+
+/* Table */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: centre;
+    max-width: 100%;
+}
+
+td {
+    text-align: right;
+    padding: 0.5em;
+}
+
+th {
+    text-align: center;
+}
+
+td, th {
+    vertical-align: middle;
+    border: 1px solid white;
+}
+
+/* Zebra-striping the table */
+tr:nth-of-type(odd) {
+  color: black;
+} 
+
+#pane{
+    margin-top: 5em;
+}
+/* Nav  */
+nav {
+    display: flex;
+    font-family: 'Titilium Light', sans-serif;
+    margin-left: 6em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0em 0.3em 0.3em 0.3em;
+    padding-top: 0.3em;
+}
+
+nav ul li {
+  display: inline;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.15em;
+  border-radius: 1em;
+  margin: 0.5em;
+  padding: 0.2em;
+}
+
+.tech-pane h1 {
+    color: green;
+}
+
+
+nav a[href=""], nav a:hover[href=""] {
+    box-shadow: none;
+}
+
+/* Links */
+article a, nav a {
+    color: black;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border-color: black;
+    border-radius: 1em;
+    /* box-shadow: 8px 8px 8px 8px #202225; */
+}
+
+nav a:hover {
+    color: darkblue;
+}
+
+a {
+    color: dodgerblue;
+}
+
+a:hover {
+}
+
+.bootstrap1 {
+  font-size: 3em;
+}
+
+.tech-pane{
+    background-color: black;
+    padding-top: 2em;
+}
+.tech-pane p{
+    color: green;
+    font-family: 'Lucida Console', monospace;
+
+}
+
+
+/* Grid Layout */
+@media screen and (min-width: 10em) {
+    body {
+	width: 90%;
+        /* display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto;
+        grid-template-areas: "top top" 
+			     "navposition navposition"
+                             "middle middle"
+                             "bottom bottom" */
+	}
+
+	aside img {
+	    padding: 0;
+	    margin: 0em 0em 2em 0em;
+	}
+
+	aside img:hover {
+	    transform: scale(1);
+	}
+
+    header {
+	padding-left: 0.5em;
+        /* grid-area: top; */
+	justify-content: space-between;
+	align-items: baseline;
+    }
+
+    nav {
+        /* grid-area: navposition; */
+    }
+
+    main {
+        /* grid-area: middle; */
+
+    }
+
+    footer {
+        /* grid-area: bottom; */
+    }
+	
+}
+
+@media screen and (min-width: 76em) {
+    body {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 35% 65%;
+	grid-template-rows: auto;
+  grid-template-areas: "top-left top-right"
+  "middle-left middle-right" 
+  "footer footer"
+	}
+
+    aside img {
+	margin: 1em;
+	padding: 1em;
+    }
+
+    header {
+    padding-left: 1em;
+    grid-area: top-left;
+    }
+
+    nav {
+        grid-area: top-right;
+    }
+	
+    main {
+	grid-area: middle-left; 
+    }
+    figure {
+        grid-area: middle-right;
+    }
+
+    img:hover {
+	transform: scale(1.1);
+    }
+
+    footer{
+      grid-area: "footer"
+    }
+
+}
+
+@viewport {
+    width: device-width
+}
+  
+  h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 0.75;
+  }  
+  span {
+    display: block;
+    font-family: 'Titilium Web', sans-serif;
+    font-size: 3em;
+  }
+  
+
+  article {
+    margin-top: 10em;
+}
+@media screen and (min-width: 65em) {
+    article {
+        margin-top: 5em;
+    }
+}
