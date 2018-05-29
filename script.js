@@ -8,11 +8,10 @@
             // define movement of panels
             var wipeAnimation = new TimelineMax()
                 .fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: RoughEase.easeOut})  // in from left
-                .fromTo("section.panel.green",    1, {x:  "-100%"}, {x: "0%", ease: Power1.easeOut})  // in from right
+                .fromTo("section.panel.red", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
                 .fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Power1.easeOut})  // in from right
                 .fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
-                .fromTo("section.panel.white", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
-                .fromTo("section.panel.red", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+                .fromTo("section.panel.white", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
 
 
 
