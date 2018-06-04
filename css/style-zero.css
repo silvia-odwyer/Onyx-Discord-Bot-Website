@@ -74,7 +74,7 @@ img{
 .iconAnimation img {
 	visibility: hidden;
 }
-.icons{
+.icons, nav{
 	display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
@@ -112,8 +112,52 @@ section#titlechart {
 	display: grid;
 }
 
+nav ul li{
+    list-style: none;
+    padding-right: 0.5em;
+    font-size: 0.6em;
+
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+nav {
+    padding-left: 15em;
+}
+
+/* CSS Animations */
+#animate1 {
+    transition: transform 0.3s ease-out;
+}
+.zap {
+    transform: scale(2.5, 0);
+}
+.box1 {
+	display: inline-block;
+	position: relative;
+	border-radius: 8px;
+	border: 0px solid white;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 5px;
+}
+.box1 {
+	min-width: 100px;
+	height: 100px;
+	margin: 0 auto 0 auto;
+}
+/* Mobile Responsiveness */
+@media screen and (min-width: 20em) {
+    nav ul li{
+        display: block;
+    }
+    
+    }
 /* GRID LAYOUT FOR LANDING PANE */
-@media screen and (min-width: 76em) {
+@media screen and (min-width: 60em) {
     #landing {
 	width: 100%;
 	display: grid;
@@ -126,6 +170,7 @@ section#titlechart {
     p {
 	grid-area: middle-left; 
     }
+ 
     figure {
         grid-area: middle-right;
 	}
@@ -138,7 +183,19 @@ section#titlechart {
 		grid-template-columns: 65% 35%;
 		grid-template-rows: auto;
   		grid-template-areas: "middle-left1 middle-right1"
-	}
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "top-left top-right"
+    }
+    nav {
+        grid-area: top-right;
+    }
+    .logo{
+        grid-area: top-left;
+    }
 	.icons{
 		grid-area: end1;
 	}
@@ -149,8 +206,16 @@ section#titlechart {
 
 	.panel p{
 		grid-area: middle-right1;
-	}
+    }
+
+    nav ul li{
+        display: inline;
+    }
+    
+    
 }  
+
+
 
 
 
