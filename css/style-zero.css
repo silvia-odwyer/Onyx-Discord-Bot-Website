@@ -1,35 +1,40 @@
 /*
 	General styles
 */
+*{
+	box-sizing: border-box;
+}
 body {
-	 background-color: #0A0909;
-	/* background-color: #292D32; */
+	 /* background-color: #0A0909; */
+	/* background-color: #292D32;  */
+	background-color: rgb(32, 31, 31);
 	/* background-image: url("../skyline-resized.png"); */
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 
 	font-size: 20px;
 	color: white;
-	font-family: "Raleway", sans-serif;
+	font-family: "Titillium", sans-serif;
 }
+
 body, html {
 	height: 100%
 }
-
-p {
+table {
+    color: #a9a8a8
+}
+p, h1 {
 	color: #a9a8a8;
 	font-size: 3em;
 	font-family: "Assistant 700", sans-serif;
 	margin-bottom: 0;
 	padding-bottom: 0;
+	margin-left: 0.4em;
 }
 
-header h1 {
-	margin: 1em;
-    color: #4a4a4a;
-    font-size: 2.5em;
-    font-family: 'Titillium', sans-serif;
-    font-weight: bold;
+p{
+	font-size: 2em;
 }
+
 img{
 	display: inline;
 }
@@ -42,7 +47,6 @@ figure{
 	background-color: #000;
 }
 
-
 main h1{
 	color: white;
 	font-size: 3.5em;
@@ -54,7 +58,7 @@ a, a:visited {
 	text-decoration: none;
 	color: #fff;
 	margin-top: 2em;
-	border: solid #fff 0.2em;
+	border: solid #fff 0.1em;
 	border-radius: 1em;
 	padding: 1em;
 }
@@ -119,15 +123,26 @@ nav ul li{
 
 }
 
+#developers{
+	background-image: url("../GIFs/code_background.gif")
+}
+
 nav ul li a:hover{
     background-color: white;
     color: black;
 }
-
+.code{
+	background-image: url("../GIFs/background.gif")
+}
+#developers {
+	background-image: url("../GIFs/code_background.gif")
+}
 nav {
     padding-left: 15em;
 }
-
+#memes{
+	background-image: url("../GIFs/meme_example.gif")
+}
 /* CSS Animations */
 #animate1 {
     transition: transform 0.3s ease-out;
@@ -173,7 +188,10 @@ nav {
  
     figure {
         grid-area: middle-right;
-	}
+    }
+    table{
+        grid-area: middle-right;
+    }
 	a {
 		grid-area: middle-right;
 	}
@@ -189,6 +207,10 @@ nav {
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-areas: "top-left top-right"
+    }
+
+    table{
+        grid-area: middle-right1
     }
     nav {
         grid-area: top-right;
