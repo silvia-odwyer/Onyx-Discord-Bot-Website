@@ -69,7 +69,7 @@ img{
 	max-width: 80%;
 }
 
-#vertical{
+#vertical, nav{
 	display: flex;
 	flex-direction: column;
     flex-wrap: wrap;
@@ -78,7 +78,7 @@ img{
 .iconAnimation img {
 	visibility: hidden;
 }
-.icons, nav{
+.icons{
 	display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
@@ -123,6 +123,35 @@ nav ul li{
 
 }
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: centre;
+    max-width: 100%;
+}
+
+td {
+    text-align: right;
+    padding: 0.5em;
+}
+
+th {
+    text-align: center;
+}
+
+td, th {
+    vertical-align: middle;
+	border: 1px solid #a9a8a8;
+	color: #a9a8a8
+}
+
+/* Zebra-striping the table */
+tr:nth-of-type(odd) {
+  color: black;
+} 
+
+
 #developers{
 	background-image: url("../GIFs/code_background.gif")
 }
@@ -132,14 +161,12 @@ nav ul li a:hover{
     color: black;
 }
 .code{
-	background-image: url("../GIFs/background.gif")
+	background-image: url("../GIFs/git_background.gif")
 }
 #developers {
 	background-image: url("../GIFs/code_background.gif")
 }
-nav {
-    padding-left: 15em;
-}
+
 #memes{
 	background-image: url("../GIFs/meme_example.gif")
 }
@@ -164,15 +191,27 @@ nav {
 	height: 100px;
 	margin: 0 auto 0 auto;
 }
-/* Mobile Responsiveness */
-@media screen and (min-width: 20em) {
-    nav ul li{
-        display: block;
-    }
-    
-    }
+
+	
 /* GRID LAYOUT FOR LANDING PANE */
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 20em) {
+nav ul li{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: vertical;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+
+}
+    
+    
+}  
+
+
+
+/* GRID LAYOUT FOR LANDING PANE */
+@media screen and (min-width: 40em) {
     #landing {
 	width: 100%;
 	display: grid;
@@ -181,7 +220,10 @@ nav {
   grid-template-areas: "middle-left middle-right"
 						"end1 end1"
 	}
-
+	nav{
+		padding-left: 15em;
+		
+	}
     p {
 	grid-area: middle-left; 
     }
