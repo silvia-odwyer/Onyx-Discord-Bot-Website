@@ -54,7 +54,9 @@ main h1{
 h2 {
 	font-size: 20px;
 }
-a, a:visited {
+
+
+a, a:visised {
 	text-decoration: none;
 	color: #fff;
 	margin-top: 2em;
@@ -62,13 +64,14 @@ a, a:visited {
 	border-radius: 1em;
 	padding: 1em;
 }
+
 a:hover {
 	text-decoration: underline;
 }
+
 img{
 	max-width: 80%;
 }
-
 #vertical, nav{
 	display: flex;
 	flex-direction: column;

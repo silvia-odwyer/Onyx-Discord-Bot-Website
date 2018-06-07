@@ -71,7 +71,9 @@ img{
     flex-wrap: wrap;
 
 }
-
+.iconAnimation img {
+	visibility: hidden;
+}
 .icons{
 	display: flex;
 	flex-direction: row;
