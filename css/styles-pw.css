@@ -15,7 +15,8 @@
 body {
 	 /* background-color: #0A0909; */
 	/* background-color: #292D32;  */
-	background-color: #000;
+    background-color: #23272A; 
+    /* background-color: #201F1F; */
 	/* background-image: url("../skyline-resized.png"); */
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 
@@ -83,8 +84,6 @@ a, a:visited {
 	text-decoration: none;
 	color: #fff;
 	margin-top: 2em;
-	border: solid #fff 0.1em;
-	border-radius: 1em;
 	padding: 1em;
 }
 a:hover {
@@ -102,7 +101,7 @@ img{
 }
 
 #landing {
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .iconAnimation img {
@@ -118,9 +117,8 @@ img{
 .panel {
 	text-align: center;
 	position: relative;
-	min-height: 500px;
 	min-width: 100%;
-	height: 100vh;
+	min-height: 70vh;
 }
 
 #wrapper .scrollContent, #wrapper.horizontal .scrollContent {
@@ -189,6 +187,10 @@ tr:nth-of-type(odd) {
 nav ul li a:hover{
     background-color: white;
     color: black;
+}
+
+#vertical a {
+    background-color: #7289DA;
 }
 .code{
 	background-image: url("../GIFs/git_background.gif")
@@ -315,8 +317,7 @@ section.panel.white{
 	background-color: #1D1F21
 }
 .turqoise {
-	background-color: #070F12;
-	background-color: #3883d8;
+	background-color: #23272A;
 }
 
 .panel.blue p{
@@ -376,6 +377,10 @@ article {
 
 .flex_items h1{
 	display: block;
+}
+
+.bordeaux{
+    background-color: #23272A;
 }
 
 #dark_theme_animation{
