@@ -15,7 +15,7 @@
         rel='stylesheet' type='text/css'>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:700|Cormorant+Infant:italic|Khula:regular" rel="stylesheet">
-    <link rel="stylesheet" href="css/style-zero.css" type="text/css">
+    <link rel="stylesheet" href="css/styles-pw.css" type="text/css">
     <!-- 
     <script src="script.js"></script> -->
 
@@ -30,10 +30,8 @@
 
 <body>
     <header>
-        <img class="logo" src="logo.PNG"></img>
-
-
-        <nav>
+        <img class="logo" src="logo.PNG" />
+        <nav id="sidebar">
             <ul>
                 <li>
                     <a href="developers.html"> Developers </a>
@@ -46,7 +44,9 @@
                 </li>
             </ul>
         </nav>
+
     </header>
+
 
     <ul id="menu"></ul>
     <section id="titlechart">
@@ -54,19 +54,24 @@
             <section id="vertical">
                 <p>A multi-purpose Discord bot with 50+ commands for meme creation, searching the web, formatting messages,
                     and more</p>
+                <ul>
+                    <li>Make Memes</li>
+                    <li>Caption GIFs</li>
+                    <li>Search YouTube</li>
+                    <li>Ask Onyx Anything</li>
+                    <li>Plus 50 Other Commands</li>
+                </ul>
                 <a href="https://discordapp.com/oauth2/authorize?&client_id=444948120573313024&scope=bot&permissions=0"> Invite Onyx To Your Server</a>
+
+
+
             </section>
-
-            <aside class="iconAnimation">
-                <img src="icons/happy.png" id="happy" title="" alt="ONYX can provide meanings for acronyms." />
-                <img src="icons/happy2.png" id="happy2" title="" alt="" />
-                <img src="icons/terminal.png" id="terminal" title="" alt="" />
-                <img src="icons/sun.png" id="sun" title="" alt="" />
-            </aside>
-
-            <aside class="icons">
-
-            </aside>
+            <article id="imageGrid">
+                <figure>
+                    <img id="img" src="GIFs/onyx_examples.gif" title="" alt="ONYX can make memes." />
+                </figure>
+            </article>
+        </div>
 
 
     </section>
@@ -74,28 +79,28 @@
 
     <section class="demo" id="section-wipes">
         <div id="memes">
-        <section class="panel blue" id="animate1">
-            <figure>
-                <img id="img" src="GIFs/meme_example.gif" title="" alt="ONYX can make memes." />
-            </figure>
-            <p>Make memes, and caption GIFs. All out of the box.</p>
+            <section class="panel blue" id="animate1">
+                <figure>
+                    <img id="img" src="GIFs/onyx_examples.gif" title="" alt="ONYX can make memes." />
+                </figure>
+                <p>Make memes, and caption GIFs. All out of the box.</p>
 
 
-        </section>
-    </div>
+            </section>
+        </div>
         <div id="trigger2" class="spacer s0"></div>
 
         <section class="panel turqoise">
 
             <b id="pressplay">TWO</b>
-            <p id="animate2">Get answers to virtually anything.
-            </p>
-            <figure>
-                <img src="GIFs/ask_example.gif" title="" alt="ONYX can even make GIFs." />
-            </figure>
 
+            <article id="animate2">
+                <figure>
+                    <img src="GIFs/ask_example.gif" title="" alt="ONYX can even make GIFs." />
+                </figure>
+                <p>Get answers to virtually anything. </p>
 
-
+            </article>
         </section>
 
         <section class="panel red">

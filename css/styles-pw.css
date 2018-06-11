@@ -5,16 +5,17 @@
 	src: url('../fonts/Blanka/Blanka-Regular.otf') format('otf');
   }
   
-  /*
+/*
 	General styles
 */
 *{
-	box-sizing: border-box;
+    box-sizing: border-box;
+    color: #a9a8a8
 }
 body {
 	 /* background-color: #0A0909; */
 	/* background-color: #292D32;  */
-	background-color: rgb(32, 31, 31);
+	background-color: #000;
 	/* background-image: url("../skyline-resized.png"); */
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 
@@ -26,11 +27,16 @@ body {
 .logo {
 	font-family: "Blanka-Regular", sans-serif;
 }
+
 body, html {
 	height: 100%
 }
 table {
     color: #a9a8a8
+}
+
+section h1 {
+	background-color: black;
 }
 p  {
 	color: #a9a8a8;
@@ -40,6 +46,18 @@ p  {
 	padding-bottom: 0;
 	margin-left: 0.4em;
 }
+
+footer {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 3em;
+	color: #a9a8a8;
+	background-color: rgb(32, 31, 31);
+}
+
 p{
 	font-size: 2em;
 }
@@ -52,26 +70,16 @@ figure{
 	display: inline;
 }
 
-.bordeaux {
-	background-color: #000;
+.threejs {
+	background-image: url("../media/skyscraper3js.gif");
+	background-repeat: cover
 }
 
-main h1{
-	color: white;
-	font-size: 3.5em;
-}
 
-h1 {
-	font-size: 3em;
-	color: #a9a8a8;
-	background-color: rgb(32, 31, 31);
-}
 h2 {
 	font-size: 20px;
 }
-
-
-a, a:visised {
+a, a:visited {
 	text-decoration: none;
 	color: #fff;
 	margin-top: 2em;
@@ -79,34 +87,24 @@ a, a:visised {
 	border-radius: 1em;
 	padding: 1em;
 }
-/* Title-bar */
-.titlebar{
-    position: fixed;
-    background-color: black;
-    color: white;
-    width: 100vh;
-    margin-top: 0em;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
 a:hover {
 	text-decoration: underline;
-}
-header {
-	position: sticky;
 }
 img{
 	max-width: 80%;
 }
-#vertical, nav{
+
+#vertical, nav, #landing{
 	display: flex;
 	flex-direction: column;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 
 }
+
+#landing {
+    min-height: 100vh;
+}
+
 .iconAnimation img {
 	visibility: hidden;
 }
@@ -120,7 +118,6 @@ img{
 .panel {
 	text-align: center;
 	position: relative;
-	height: 100%;
 	min-height: 500px;
 	min-width: 100%;
 	height: 100vh;
@@ -140,19 +137,20 @@ small{
 section#titlechart {
 	text-align: center;
 	position: relative;
-	height: 100%;
-	min-height: 500px;
 	min-width: 100%;
-	height: 100vh;
-
+	min-height: 50vh;
 	display: grid;
 }
 
 nav ul li{
     list-style: none;
     padding-right: 0.5em;
-    font-size: 0.6em;
+    font-size: 0.8em;
 
+}
+
+#vertical ul li{
+    font-size: 1.3em;
 }
 
 table {
@@ -199,8 +197,12 @@ nav ul li a:hover{
 	background-image: url("../GIFs/code_background.gif")
 }
 
-#memes{
-	background-image: url("../GIFs/meme_example.gif")
+#git{
+	background-image: url("../media/git_background.gif");
+	background-repeat: no-repeat;
+}
+#chat{
+	background-image: url("../media/chat2.gif")
 }
 /* CSS Animations */
 #animate1 {
@@ -252,25 +254,22 @@ nav ul li{
   grid-template-areas: "middle-left middle-right"
 						"end1 end1"
 	}
-	nav{
-		padding-left: 15em;
-		
-	}
-    p {
+	
+    #vertical {
 	grid-area: middle-left; 
     }
  
     figure {
         grid-area: middle-right;
     }
-    table{
-        grid-area: middle-right;
-    }
-	a {
-		grid-area: middle-right;
+    
+
+    nav{
+		padding-left: 15em;
+		
 	}
 
-	.panel{
+	.panel article{
 		display: grid;
 		grid-template-columns: 65% 35%;
 		grid-template-rows: auto;
@@ -292,28 +291,21 @@ nav ul li{
     .logo{
         grid-area: top-left;
     }
-	.icons{
-		grid-area: end1;
-	}
 
 	.panel figure {
 		grid-area: middle-left1;
 	}
 
-	.panel p{
+	.panel article{
 		grid-area: middle-right1;
-    }
+	}
+	
 
     nav ul li{
         display: inline;
     }
     
-    
 }  
-
-
-
-
 
 section.panel.white{
 	color: black
@@ -340,6 +332,10 @@ section.panel.white{
 .black {
 	background-color: #000000;
 }
+
+.dark{
+	background-image:url("../media/chat2.gif");
+}
 .white {
 	background-color: #292D32;
 }
@@ -351,4 +347,63 @@ section.panel.white{
 }
 .orange {
 	background-color: #ea6300;
+}
+.red{
+	background-image: url("../media/threejs_website.gif");
+}
+
+article {
+	box-sizing: border-box;
+}
+
+.flex_items {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color: black;
+}
+
+.flex_items article {
+	border: solid #a9a8a8 0.2em;
+	padding: 4em;
+	margin: 1em;
+	list-style: none;
+}
+
+.flex_items ul li p {
+	background-image: url("../media/circlegraph1.png")
+
+}
+
+.flex_items h1{
+	display: block;
+}
+
+#dark_theme_animation{
+	color: black;
+	background-color: white;
+}
+
+#seo {
+	background-image: url("../media/linegraph.png")
+}
+
+#chat_silvia {
+	background-image: url("../media/silvia_discord3.PNG")
+}
+
+#discord_animation{
+	background-image: url("../media/silvia_discord1.png")
+}
+
+#physics_undefined{
+	background-image: url("../media/physics_undefined.gif")
+}
+
+#memes{
+	background-image: url("../GIFs/meme_example.gif")
+}
+
+#animate1 {
+    transition: transform 0.3s ease-out;
 }
