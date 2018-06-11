@@ -259,7 +259,7 @@ nav ul li{
 	grid-area: middle-left; 
     }
  
-    figure {
+    #vertical article {
         grid-area: middle-right;
     }
     
@@ -269,12 +269,6 @@ nav ul li{
 		
 	}
 
-	.panel article{
-		display: grid;
-		grid-template-columns: 65% 35%;
-		grid-template-rows: auto;
-  		grid-template-areas: "middle-left1 middle-right1"
-    }
     
     header {
         display: grid;
@@ -292,17 +286,22 @@ nav ul li{
         grid-area: top-left;
     }
 
-	.panel figure {
-		grid-area: middle-left1;
-	}
-
-	.panel article{
-		grid-area: middle-right1;
-	}
-	
 
     nav ul li{
         display: inline;
+    }
+
+    .panel {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-areas: "left1 right1"
+    }
+    .panel figure {
+        grid-area: left1;
+    }
+
+    .panel article {
+        grid-area: right1;
     }
     
 }  
