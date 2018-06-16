@@ -273,9 +273,10 @@ nav ul li{
 
     
     header {
-        display: grid;
+		display: grid;
+		position: sticky;
         grid-template-columns: 30% 70%;
-        grid-template-areas: "top-left top-right"
+		grid-template-areas: "top-left top-right"
     }
 
     table{
@@ -295,7 +296,7 @@ nav ul li{
 
     .panel {
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 65% 35%;
         grid-template-areas: "left1 right1"
     }
     .panel figure {
@@ -360,12 +361,11 @@ article {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	background-color: black;
 }
 
 .flex_items article {
 	border: solid #a9a8a8 0.2em;
-	padding: 4em;
+	padding: 3em;
 	margin: 1em;
 	list-style: none;
 }
@@ -377,6 +377,8 @@ article {
 
 .flex_items h1{
 	display: block;
+	font-size: 1.5em;
+	text-align: center;
 }
 
 .bordeaux{
@@ -387,7 +389,22 @@ article {
 	color: black;
 	background-color: white;
 }
+article h1 {
+	background-color: #7289DA;
+	color: white;
+	font-size: 2.2em;
+}
 
+article p {
+	font-size: 1em;
+}
+#commands h1 {
+	background-color: black;
+	font-size: 1.5em;
+}
+section article {
+	margin-right: 3em;
+}
 #seo {
 	background-image: url("../media/linegraph.png")
 }
