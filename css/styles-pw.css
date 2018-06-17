@@ -311,6 +311,12 @@ nav ul li{
 			flex-wrap: wrap;
 		
 	}
+
+	.flex_items article {
+		display: inline-block;
+
+		width: calc(100% * (1/4) - 10px - 1px);
+	}
 	
     
 }  
@@ -387,6 +393,9 @@ article {
 	padding: 3em;
 	margin: 1em;
 	list-style: none;
+
+
+	
 }
 
 .flex_items ul li p {
@@ -445,6 +454,5 @@ section article {
 }
 
 #animate1 {
-    transition: transform 0.3s ease-out;
+	transition: transform 0.3s ease-out;
 }
-

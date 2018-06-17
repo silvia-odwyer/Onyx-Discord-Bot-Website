@@ -7,11 +7,6 @@
         var controller = new ScrollMagic.Controller();
 
         // build scene
-        var scene = new ScrollMagic.Scene({ triggerElement: "#trigger1" })
-            // trigger animation by adding a css class
-            .setTween("#animate1", 0.5, { padding: "3em", scale: 0.5, boxShadow: "90px 10px 10px 0px #000" }) // trigger a TweenMax.to tween
-            .addTo(controller);
-        // build scene
         var scene1 = new ScrollMagic.Scene({
             triggerElement: "#trigger2"
         })
@@ -37,7 +32,7 @@
 
         var scene4 = new ScrollMagic.Scene({
             triggerElement: "#pressplay"
-        }).setTween("section.panel.red", 2, { scale: 0.5 }) // trigger a TweenMax.to tween
+        }).setTween("section.panel.red", 0.5, { scale: 0.5 }) // trigger a TweenMax.to tween
             .addTo(controller);
 
 
@@ -48,15 +43,20 @@
 
         var scene6 = new ScrollMagic.Scene({
             triggerElement: "#trigger_e"
-        }).setTween("animate_e", 2, { scale: 0.5 }) // trigger a TweenMax.to tween
+        }).setTween("#animate_e", 0.5, { scale: 1.05 }) // trigger a TweenMax.to tween
             .addTo(controller);
 
-        var scene6 = new ScrollMagic.Scene({
+        var scene7 = new ScrollMagic.Scene({
             triggerElement: "#trigger_f"
-        }).setTween("animate_f", 2, { scale: 0.5 }) // trigger a TweenMax.to tween
+        }).setTween("#animate_f", 0.5, { scale: 1.05 }) // trigger a TweenMax.to tween
             .addTo(controller);
 
-
+            var scene8 = new ScrollMagic.Scene({
+                triggerElement: "#trigger_g"
+            }).setTween("#animate_g", 0.5, { scale: 1.05 }) // trigger a TweenMax.to tween
+                .addTo(controller);
+    
+    
 
 
     }
