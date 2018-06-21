@@ -189,7 +189,7 @@ nav ul li a:hover{
     color: black;
 }
 
-#vertical a {
+#vertical a, .panel a {
     background-color: #7289DA;
 }
 .code{
@@ -312,10 +312,39 @@ nav ul li{
 		
 	}
 
-	.flex_items article {
+	.flex_items article, .flex_items1 article {
 		display: inline-block;
 
+	}
+
+	.flex_items article {
 		width: calc(100% * (1/4) - 10px - 1px);
+
+	}
+
+	footer {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 65% 35%;
+		grid-template-rows: auto;
+	  grid-template-areas: "fleft fright"
+	}
+
+	footer p {
+		grid-area: fleft;
+	}
+
+	footer ul {
+		grid-area: fright;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	footer ul a {
+		margin: 0;
+		padding: 0;
+		padding-left: 0.3em;
 	}
 	
     
@@ -328,6 +357,9 @@ iframe {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	margin: auto;
+	max-width: 100%;
+	padding: auto;
 }
 .media_container article {
 	display: flex;
@@ -382,13 +414,13 @@ article {
 	box-sizing: border-box;
 }
 
-.flex_items {
+.flex_items, .flex_items1 {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 }
 
-.flex_items article {
+.flex_items article, .flex_items1 {
 	border: solid #a9a8a8 0.2em;
 	padding: 3em;
 	margin: 1em;
@@ -456,3 +488,35 @@ section article {
 #animate1 {
 	transition: transform 0.3s ease-out;
 }
+
+#dev {
+	background-image: url("../GIFs/linegraph.png")}
+
+#onyxlabs {
+	background-image: url("../GIFs/background.gif")
+}
+
+.mono {
+	font-family: "ProFontWindows", sans-serif;
+}
+
+.logo {
+	padding: 0em;
+	margin: 0em;
+}
+
+.onxlbs{
+	font-family: "ProFontWindows", sans-serif;
+	text-shadow: 0px 0px 5px #0ff;
+	color: black;
+	font-size: 3em;
+}
+
+.scifi{
+	background-color: black;
+}
+
+
+  .cityscape{
+	  background-image: url("../media/cityscape.jpg")
+  }
