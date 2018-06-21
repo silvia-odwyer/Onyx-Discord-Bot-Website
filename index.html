@@ -11,163 +11,407 @@
 
     <link rel="icon" href="media/favicon.ico" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Montserrat:500|Roboto:700|Oxygen|Raleway|Assistant:700' rel='stylesheet'
-        type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Montserrat:500|Roboto:700|Oxygen|Raleway|Assistant:700'
+        rel='stylesheet' type='text/css'>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:700|Cormorant+Infant:italic|Khula:regular" rel="stylesheet">
-    <link rel="stylesheet" href="css/style-zero.css" type="text/css">
-<!-- 
+    <link rel="stylesheet" href="css/styles-pw.css" type="text/css">
+    <!-- 
     <script src="script.js"></script> -->
 
     <script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
     <script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="animations.js"></script>
+
 </head>
 
 
 
-<body>
+<body class="cityscape">
     <header>
-        <img src="logo.PNG"></img>
-        <!-- 
+        <a class="logo" href="index.html">
+            <img src="logo.PNG" /> </a>
 
-    <nav>
-        <ul>
-            <li>
-                <a href=""> Home </a>
-            </li>
-            <li>
-                <a href="github.html"> GitHub </a>
-            </li>
-            <li>
-                <a href="documentation.html"> Documentation </a>
-            </li>
-        </ul>
-    </nav> -->
+        <nav id="sidebar">
+            <ul>
+                <li>
+                    <a href="developers.html"> Developers </a>
+                </li>
+                <li>
+                    <a href="commands.html"> Commands </a>
+                </li>
+                <li>
+                    <a href="onyx-labs.html"> Onyx Labs </a>
+                </li>
+                <li>
+                    <a href="help-support.html"> Help & Support </a>
+                </li>
+
+            </ul>
+        </nav>
+
     </header>
 
-    <ul id="menu"></ul>
-    <section id="content-wrapper">
-        <section id="wrapper">
-            <section class="scrollContent">
-                <section id="titlechart">
-                    <div id="landing">
-                        <section id="vertical">
-                        <p>A multi-purpose Discord bot with 50+ commands for meme creation, searching the web, formatting messages,
-                            and more</p>
-                            <a href="https://discordapp.com/oauth2/authorize?&client_id=444948120573313024&scope=bot&permissions=0"> Invite Onyx To Your Server</a>
-                        </section>
-
-                            <aside class="iconAnimation">
-                                <img src="icons/happy.png" id="happy" title="" alt="ONYX can provide meanings for acronyms." />
-                                <img src="icons/happy2.png" id="happy2" title="" alt="" />
-                                <img src="icons/terminal.png" id="terminal" title="" alt="" />
-                                <img src="icons/sun.png" id="sun" title="" alt="" />
-                                <!-- <img src="icons/stats-dots.png" title="" alt="" />
-                                <img src="icons/search.png" title="" alt="" />
-                                <img src="icons/qrcode.png" title="" alt="" />
-                                <img src="icons/play2.png" title="" alt="" />
-
-                                <img src="icons/info.png" title="" alt="" />
-                                <img src="icons/bubbles4.png" title="" alt="" />
-                                <img src="icons/envelop.png" title="" alt="" />
-                                <img src="icons/image.png" title="" alt="" />
-                                <img src="icons/heart.png" title="" alt="" />
-
-                                <img src="icons/film.png" title="" alt="" />
-                                <img src="icons/meter.png" title="" alt="" />
-                                <img src="icons/pencil.png" title="" alt="" />
-                                <img src="icons/music.png" title="" alt="" />
-                                <img src="icons/play2.png" title="" alt="" /> -->
-                            </aside>
-
-                        <aside class="icons">
-                            <figure>
-                                <img src="icons/happy.png" title="" alt="ONYX can provide meanings for acronyms." />
-                                <img src="icons/happy2.png" title="" alt="" />
-                                <img src="icons/terminal.png" title="" alt="" />
-                                <img src="icons/sun.png" title="" alt="" />
-                                <img src="icons/stats-dots.png" title="" alt="" />
-                                <img src="icons/search.png" title="" alt="" />
-                                <img src="icons/qrcode.png" title="" alt="" />
-                                <img src="icons/play2.png" title="" alt="" />
-
-                                <img src="icons/info.png" title="" alt="" />
-                                <img src="icons/bubbles4.png" title="" alt="" />
-                                <img src="icons/envelop.png" title="" alt="" />
-                                <img src="icons/image.png" title="" alt="" />
-                                <img src="icons/heart.png" title="" alt="" />
-
-                                <img src="icons/film.png" title="" alt="" />
-                                <img src="icons/meter.png" title="" alt="" />
-                                <img src="icons/pencil.png" title="" alt="" />
-                                <img src="icons/music.png" title="" alt="" />
-                                <img src="icons/play2.png" title="" alt="" />
-
-                            </figure>
-                        </aside>
-
-                    </div>
-                </section>
-                <section class="demo" id="section-wipes">
-                    <section id="pinContainer">
-                        <section class="panel blue">
-                            <figure>
-                                <img id="img" src="GIFs/meme_example.gif" title="" alt="ONYX can make memes." />
-                            </figure>
-                            <p>Make memes. :D Choose from a variety of templates.</p>
-
-
-                        </section>
-
-                        
-                        <section class="panel turqoise">
-                            <b>TWO</b>
-                            <p>Get answers on virtually anything.
-                                </p>
-                                <figure>
-                                    <img src="GIFs/ask_example.gif" title="" alt="ONYX can even make GIFs." />
-                                </figure>
-
-                        </section>
-
-                        <section class="panel red">
-                                <b>THREE</b>
-                                <p>Get YouTube Videos</p>
-                                <figure>
-                                    <img src="GIFs/meme_example.gif" title="" alt="ONYX can even make GIFs." />
-                                </figure>
-    
-                        </section>
-
-                        <section class="panel bordeaux">
-                            <p>Onyx has space covered. From photos of galaxies far away to live NASA footage, Onyx is keeping her eye on the stars. </p>
-                            <figure>
-                                <img src="GIFs/unsplash_example.gif" title="" alt="ONYX can provide meanings for acronyms." />
-                            </figure>
-                        </section>
-                        <section class="panel white">
-                            <p>Plus a ton of fun commands, including translation, message formatting, making QR codes, captchas, and over 40 other commands.</p>
-                            <figure>
-                                <img src="GIFs/unsplash_example.gif" title="" alt="ONYX can provide meanings for acronyms." />
-                            </figure>
-                        </section>
-                        
-                    </section>
-                </section>
+    <section id="titlechart">
+        <div id="landing">
+            <section id="vertical">
+                <p>A multi-purpose Discord bot with 50+ commands for meme creation, searching the web, formatting messages,
+                    and more</p>
+                <ul>
+                    <li>Make Memes</li>
+                    <li>Caption GIFs</li>
+                    <li>Search YouTube</li>
+                    <li>Ask Onyx Anything</li>
+                    <li>Plus 50 Other Commands</li>
+                </ul>
+                <a href="https://discordapp.com/oauth2/authorize?&client_id=444948120573313024&scope=bot&permissions=0">INVITE ONYX TO YOUR SERVER</a>
             </section>
-        </section>
-        <article>
-            <h1>Read Documentation Here</h1>
-            <p>To get a full list of all commands, just visit our commands page.</p>
-            <p>For full documentation, you can read our ReadTheDocs entries.</p>
-            <p>Star Onyx on GitHub, Silvia, her creator would be delighted!</p>
+            <article>
+                <figure>
+                    <img id="img" src="GIFs/onyx_examples.gif" title="" alt="ONYX can make memes." />
+                </figure>
+            </article>
+        </div>
+
+
+    </section>
+
+    <div id="trigger2" class="spacer s0"></div>
+
+    <section class="panel turqoise">
+        <article id="animate2">
+            <h1>Make Memes & Caption GIFs</h1>
+            <p>Make memes, caption GIFs, search for GIFS, memes . . . all out of the box.</p>
+            <ul>
+                <li>Over 15 meme templates you can caption</li>
+                <li>Get trending GIFs and stickers </li>
+                <li>Translate words to GIFs and stickers</li>
+                <li>React with GIFs</li>
+                <li>Caption memes</li>
+            </ul>
+            <p>[THREATENED BY ARTICLE 13] --> This functionality may not be provided to EU Servers, since Article 13 may come
+                into effect. It is still in effect as of now, but when(if) legislation passes, meme/GIF generation and fetching
+                may be removed. </p>
         </article>
-    
-    
+        <figure>
+            <img src="GIFs/sticker_examples.gif" title="" alt="ONYX can even make GIFs." />
+        </figure>
+
+    </section>
+    <b id="triggerc"></b>
+
+    <section class="panel turqoise">
+        <article id="animatec">
+            <h1>React With Stickers & GIFs</h1>
+            <p>Get thousands of reaction stickers & GIFs to liven your Discord experience, and add some oomph to your messages.</p>
+
+            <section class="media_container">
+                <article class="iframe">
+                    <iframe src="https://giphy.com/embed/xT9IgzvnOyNDYnxeHS" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    <p>
+                        <a href="https://giphy.com/stickers/mythical-creatures-sparkly-objects-xT9IgzvnOyNDYnxeHS">via GIPHY</a>
+                    </p>
+                </article>
+
+                <article class="iframe">
+                    <iframe src="https://giphy.com/embed/3ov9k8fmDbIqzzbsLS" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    <p>
+                        <a href="https://giphy.com/stickers/realistic-effects-3ov9k8fmDbIqzzbsLS">via GIPHY</a>
+                    </p>
+
+                </article class="iframe">
+                <iframe src="https://giphy.com/embed/3o7aCU1S05Gr77MG2c" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <p>
+                    <a href="https://giphy.com/stickers/swipe-erma-fiend-3o7aCU1S05Gr77MG2c">via GIPHY</a>
+                </p>
+
+                <article class="iframe">
+                    <iframe src="https://giphy.com/embed/l1J9AkPa5OChzycCs" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    <p>
+                        <a href="https://giphy.com/stickers/l1J9AkPa5OChzycCs">via GIPHY</a>
+                    </p>
+
+                </article>
+
+                <article class="iframe">
+                    <iframe src="https://giphy.com/embed/l378jpSVTOVEtkY2A" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    <p>
+                        <a href="https://giphy.com/stickers/l378jpSVTOVEtkY2A">via GIPHY</a>
+                    </p>
+
+                </article>
+
+            </section>
+        </article>
+        <figure>
+            <img src="GIFs/sticker_examples.gif" title="" alt="ONYX can even make GIFs." />
+        </figure>
+
+    </section>
+    <b id="trigger_d"></b>
+
+    <section class="panel turqoise">
+
+        <figure>
+            <img src="GIFs/ask_only_example.gif" title="" alt="ONYX can even make GIFs." />
+        </figure>
+        <article id="animate_d">
+            <h1>Ask Onyx Anything</h1>
+            <p>You can ask Onyx any question, and she'll provide detailed info. Need a definition? Want more info. on a topic?
+                Just ask Onyx.</p>
+
+            <ul>
+                <li>Get stats on your first name's popularity</li>
+                <li>Get definitions for any word</li>
+                <li>Get the meaning of acronyms and/or abbreviations</li>
+                <li>...plus virtually any question you need answered!</li>
+            </ul>
+
+        </article>
+    </section>
+    <span id="pressplay"></span>
+
+    <section class="panel turqoise">
+        <figure>
+            <img id="video_icon" src="icons/play2.png" title="" alt="ONYX can even make GIFs." />
+        </figure>
+        <b id="startSpace"></b>
+        <article>
+            <h1>Get YouTube Videos</h1>
+            <p>Search for your favourite music videos or share your favourite videos with friends.</p>
+            <ul>
+                <li>A single "yt" command is all you need to search YouTube</li>
+                <li>Lightning fast</li>
+                <li>Returns the first result from YouTube</li>
+            </ul>
+        </article>
+
+        <figure>
+            <img src="GIFs/yt_example.gif" title="" alt="ONYX can even make GIFs." />
+        </figure>
+
+    </section>
+
+    <section class="panel bordeaux">
+        <article>
+            <h1>Get The Latest Live Space Stats</h1>
+
+            <p>Onyx has space covered. From photos of galaxies far away to live NASA footage, Onyx is keeping her eye on the
+                stars.
+                <ul>
+                    <li>Get live footage of Earth as seen from the NOAA Discovery Probe</li>
+                    <li>Get live ISS co-ordinates</li>
+                    <li>Get photos of galaxies, solar systems, and more</li>
+
+                </ul>
+                <section class="media_container">
+                    <article>
+                        <iframe src="https://giphy.com/embed/BFHj2VF4vi3GE" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+                        <p>
+                            <a href="https://giphy.com/gifs/trippy-pretty-beautiful-BFHj2VF4vi3GE">via GIPHY</a>
+                        </p>
+
+                    </article>
+                    <b id="trigger_e"></b>
+
+                    <article>
+                        <iframe src="https://giphy.com/embed/l1J9tb9W5YNEOPdgA" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <p>
+                            <a href="https://giphy.com/stickers/l1J9tb9W5YNEOPdgA">via GIPHY</a>
+                        </p>
+                    </article>
+
+                    <article>
+                        <iframe src="https://giphy.com/embed/xULW8N1gBOKIWuIka4" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <p>
+                            <a href="https://giphy.com/stickers/no-space-xULW8N1gBOKIWuIka4">via GIPHY</a>
+                        </p>
+                    </article>
+                </section>
+
+        </article>
+        </p>
+        <figure>
+            <img src="GIFs/space_example2.gif" title="" alt="ONYX can get all the latest space stats." />
+        </figure>
+    </section>
+
+    <section class="panel white">
+        <article id="animate_e">
+            <h1>Tons of Message Formatting</h1>
+
+            <p>Now you can transform your message into something spectacular.
+            </p>
+            <ul>
+                <li>Translate to binary, 1337, advanced 1337</li>
+                <li>Turn messages into emojipastas</li>
+                <li>Emojify your message's letters</li>
+                <li>Translate words to GIFs</li>
+            </ul>
+            <span id="trigger_f"></span>
+
+        </article>
+        <figure>
+            <img src="GIFs/msg_formatting_example.gif" title="" alt="ONYX can format messages and even translate them." />
+        </figure>
+    </section>
+
+    <section class="panel white">
+        <article id="animate_f">
+            <h1>Entertain Your Server With Fun and Media Commands</h1>
+
+            <p>Onyx comes with dozens of fun and media commands that'll keep your server entertained for hours.
+            </p>
+            <ul>
+                <li>Fetch images from Unsplash and Pixabay</li>
+                <li>Make captchas, QR codes, and bar codes from plaintext</li>
+                <li>Get comics</li>
+
+            </ul>
+            <span id="trigger_g"></span>
+        </article>
+        <figure>
+            <img src="GIFs/fun_example.gif" title="" alt="ONYX can provide meanings for acronyms." />
+        </figure>
+    </section>
+    <section class="panel white">
+        <article id="animate_g">
+            <h1>Continually Updated</h1>
+            <p>Over three new commands get added to Onyx every week, so you'll always have new commands and functionality on
+                the way. (See Onyx Labs for features coming soon)
+            </p>
+            <span id="trigger_h"></span>
+            <p>Coming Soon</p>
+
+            <ul>
+                <li>Spotify Integration</li>
+                <li>Points-Based Economy System</li>
+                <li>Futuristic Server Stats Commands</li>
+                <li>A live dashboard</li>
+            </ul>
+
+            <p>Got an idea for a feature? Contact @Silvia923#9909 on Discord, or utilise Onyx's idea command. :D</p>
+
+        </article>
+        <figure>
+            <img src="GIFs/unsplash_example.gif" title="" alt="ONYX can provide meanings for acronyms." />
+        </figure>
     </section>
 
 
+    <section class="panel white">
+        <article id="animate_h">
+            <h1>Onyx + Discord = ❤️</h1>
+            <p>Onyx is ready to join when you are. Invite her today!
+            </p>
+            <a href="https://discordapp.com/oauth2/authorize?&client_id=444948120573313024&scope=bot&permissions=0">INVITE ONYX TO YOUR SERVER</a>
+            <a href="https://discord.gg/cSWHaEK">JOIN ONYX's SUPPORT SERVER</a>
+
+        </article>
+        <figure>
+            <img src="media/onyxdiscord.png" title="" alt="ONYX can provide meanings for acronyms." />
+        </figure>
+    </section>
+
+    <h1>The Stats</h1>
+    <section class="flex_items">
+
+        <article id="trigger_dark_theme">
+            <h1>SERVER COUNT</h1>
+            <p>5</p>
+        </article>
+
+        <article>
+            <h1>MEMBER COUNT</h1>
+            <p>11</p>
+
+        </article>
+
+        <article>
+            <h1>COMMANDS</h1>
+            <p>47</p>
+
+        </article>
+
+        <article>
+            <h1>PREFIXES</h1>
+            <p>-</p>
+            <p>@Onyx</p>
+            <p>(Prefix can be customised to whatever you like.)</p>
+        </article>
+
+        <article>
+            <h1>RUNS</h1>
+            <p>24/7</p>
+        </article>
+
+        <article>
+            <h1>MOST POPULAR COMMANDS</h1>
+            <p>meme, photo, yt, getem, captcha, ask</p>
+        </article>
+
+    </section>
+
+    <h1 id="chat_silvia">Chat & Support 💬 1️⃣ 🗨</h1>
+    <section class="flex_items">
+
+        <article id="discord_animation">
+            <h1>Ask Silvia on Discord</h1>
+            <p>@Silvia923#9909</p>
+
+        </article>
+
+        <article>
+            <h1>Onyx Support Server</h1>
+            <a href="https://discord.gg/cSWHaEK">JOIN ONYX's SUPPORT SERVER</a>
+
+        </article>
+
+        <article>
+            <h1>Gitter</h1>
+            <p>Silvia O'Dwyer</p>
+        </article>
+
+    </section>
+
+    <h1>Pages</h1>
+    <section class="flex_items">
+
+        <article>
+            <h1>
+                <a href="commands.html"> Commands </a>
+            </h1>
+            <p>Get a comprehensive list of all commands available to Onyx.</p>
+
+        </article>
+
+        <article id="dev">
+            <h1>
+                <a href="developers.html">Developers</a>
+            </h1>
+            <p>Want to contribute to Onyx's development?</p>
+        </article>
+
+        <article id="onyxlabs">
+            <h1>
+                <a href="onyx-labs.html">Onyx Labs</a>
+            </h1>
+            <p>See what new features are being developed for Onyx right now.</p>
+        </article>
+
+        <article id="help_support">
+            <h1>
+                <a href="help-support.html">Help & Support</a>
+            </h1>
+            <p>Need help with setting up Onyx or using her commands? Click here!</p>
+        </article>
+
+
+    </section>
+
+    </section>
     <!-- 
         <article>
             <table>
@@ -187,14 +431,17 @@
 
     <footer>
         <p>
-            <small> &copy; Silvia O'Dwyer 2018. All rights reserved. </small>
+            <small> &copy; Silvia O'Dwyer, 2018. All rights reserved. This website was coded with
+                <3, thanks to HTML, CSS, and a little JS magic.</small>
         </p>
 
-        <p>
-            <small>All image attributions can be found on my
-                <a href="attributions.html"> Attributions Page.</a>
-            </small>
-        </p>
+        <ul>
+            <a href="developers.html">Developers</a>
+            <a href="onyx-labs.html">Onyx Labs</a>
+            <a href="help-support.html">Help & Support</a>
+            <a href="commands.html">Commands</a>
+        </ul>
+
     </footer>
 </body>
 
