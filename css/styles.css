@@ -183,7 +183,7 @@ nav ul li a:hover {
 	color: black;
 }
 
-#vertical a, .panel a {
+#vertical a {
 	background-color: #7289DA;
 }
 
@@ -319,7 +319,8 @@ nav ul li a:hover {
 	footer ul a {
 		margin: 0;
 		padding: 0;
-		padding-left: 0.3em;
+		padding-left: 1.1em;
+		text-decoration: underline;
 	}
 }
 
@@ -499,4 +500,8 @@ section article {
 
 .cityscape {
 	background-image: url("../media/cityscape.jpg")
+}
+
+.iframe p {
+	background-color:  #11ffee00;
 }
