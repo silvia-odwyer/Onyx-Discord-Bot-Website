@@ -1,45 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Open+Source+Sans|Titillium+Web|Quantico|Roboto');
-
-@font-face {
-	font-family: "Blanka-Regular";
-	src: url('../fonts/Blanka/Blanka-Regular.otf') format('otf');
-  }
-  
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Open+Source+Sans|Electrolize|Titillium+Web|Quantico|Roboto');
 /*
 	General styles
 */
-*{
-    box-sizing: border-box;
-    color: #a9a8a8
-}
-body {
-	 /* background-color: #0A0909; */
-	/* background-color: #292D32;  */
-    background-color: #23272A; 
-    /* background-color: #201F1F; */
-	/* background-image: url("../skyline-resized.png"); */
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
 
+* {
+	box-sizing: border-box;
+	color: #a9a8a8
+}
+
+body {
+	/* background-color: #0A0909; */
+	/* background-color: #292D32;  */
+	background-color: #23272A;
+	/* background-color: #201F1F; */
+	/* background-image: url("../skyline-resized.png"); */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	font-size: 20px;
 	color: white;
 	font-family: "Titillium Web", sans-serif;
 }
 
-.logo {
-	font-family: "Blanka-Regular", sans-serif;
-}
-
 body, html {
 	height: 100%
 }
+
 table {
-    color: #a9a8a8
+	color: #a9a8a8
 }
 
 section h1 {
 	background-color: black;
 }
-p  {
+
+p {
 	color: #a9a8a8;
 	font-size: 0.8em;
 	font-family: "Open Source Sans", sans-serif;
@@ -59,15 +52,15 @@ h1 {
 	background-color: rgb(32, 31, 31);
 }
 
-p{
+p {
 	font-size: 2em;
 }
 
-img{
+img {
 	display: inline;
 }
 
-figure{
+figure {
 	display: inline;
 }
 
@@ -76,43 +69,44 @@ figure{
 	background-repeat: cover
 }
 
-
 h2 {
 	font-size: 20px;
 }
+
 a, a:visited {
 	text-decoration: none;
 	color: #fff;
 	margin-top: 2em;
 	padding: 1em;
 }
+
 a:hover {
 	text-decoration: underline;
 }
-img{
+
+img {
 	max-width: 80%;
 }
 
-#vertical, nav, #landing{
+#vertical, nav, #landing {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-
 }
 
 #landing {
-    min-height: 90vh;
+	min-height: 90vh;
 }
 
 .iconAnimation img {
 	visibility: hidden;
 }
-.icons{
+
+.icons {
 	display: flex;
 	flex-direction: row;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
-
 
 .panel {
 	text-align: center;
@@ -124,12 +118,13 @@ img{
 #wrapper .scrollContent, #wrapper.horizontal .scrollContent {
 	font-size: 0;
 }
+
 #wrapper .scrollContent div, section, footer {
 	font-size: 13px;
 }
 
-small{
-    font-size: 0.5em;
+small {
+	font-size: 0.5em;
 }
 
 section#titlechart {
@@ -140,79 +135,85 @@ section#titlechart {
 	display: grid;
 }
 
-nav ul li{
-    list-style: none;
-    padding-right: 0.5em;
-    font-size: 0.8em;
-
+nav ul li {
+	list-style: none;
+	padding-right: 0.5em;
+	font-size: 0.8em;
 }
 
-#vertical ul li{
-    font-size: 1.3em;
+#vertical ul li {
+	font-size: 1.3em;
 }
 
 table {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    text-align: centre;
-    max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	text-align: centre;
+	max-width: 100%;
 }
 
 td {
-    text-align: right;
-    padding: 0.5em;
+	text-align: right;
+	padding: 0.5em;
 }
 
 th {
-    text-align: center;
+	text-align: center;
 }
 
 td, th {
-    vertical-align: middle;
+	vertical-align: middle;
 	border: 1px solid #a9a8a8;
 	color: #a9a8a8
 }
 
 /* Zebra-striping the table */
+
 tr:nth-of-type(odd) {
-  color: black;
-} 
-
-
-#developers{
-	background-image: url("../GIFs/code_background.gif")
+	color: black;
 }
 
-nav ul li a:hover{
-    background-color: white;
-    color: black;
-}
-
-#vertical a, .panel a {
-    background-color: #7289DA;
-}
-.code{
-	background-image: url("../GIFs/git_background.gif")
-}
 #developers {
 	background-image: url("../GIFs/code_background.gif")
 }
 
-#git{
+nav ul li a:hover {
+	background-color: white;
+	color: black;
+}
+
+#vertical a, .panel a {
+	background-color: #7289DA;
+}
+
+.code {
+	background-image: url("../GIFs/git_background.gif")
+}
+
+#developers {
+	background-image: url("../GIFs/code_background.gif")
+}
+
+#git {
 	background-image: url("../media/git_background.gif");
 	background-repeat: no-repeat;
 }
-#chat{
+
+#chat {
 	background-image: url("../media/chat2.gif")
 }
+
 /* CSS Animations */
+
 #animate1 {
-    transition: transform 0.3s ease-out;
+	transition: transform 0.3s ease-out;
 }
+
 .zap {
-    transform: scale(2.5, 0);
+	transform: scale(2.5, 0);
 }
+
 .box1 {
 	display: inline-block;
 	position: relative;
@@ -222,133 +223,106 @@ nav ul li a:hover{
 	vertical-align: middle;
 	padding: 0 5px;
 }
+
 .box1 {
 	min-width: 100px;
 	height: 100px;
 	margin: 0 auto 0 auto;
 }
 
-	
 /* GRID LAYOUT FOR LANDING PANE */
+
 @media screen and (min-width: 20em) {
-nav ul li{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: vertical;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 3em;
-
+	nav ul li {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: vertical;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 3em;
+	}
 }
-    
-    
-}  
-
-
 
 /* GRID LAYOUT FOR LANDING PANE */
+
 @media screen and (min-width: 40em) {
-    #landing {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 35% 65%;
-	grid-template-rows: auto;
-  grid-template-areas: "middle-left middle-right"
-						"end1 end1"
+	#landing {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 35% 65%;
+		grid-template-rows: auto;
+		grid-template-areas: "middle-left middle-right" "end1 end1"
 	}
-	
-    #vertical {
-	grid-area: middle-left; 
-    }
- 
-    #vertical article {
-        grid-area: middle-right;
-    }
-    
-
-    nav{
+	#vertical {
+		grid-area: middle-left;
+	}
+	#vertical article {
+		grid-area: middle-right;
+	}
+	nav {
 		padding-left: 15em;
-		
 	}
-
-    
-    header {
+	header {
 		display: grid;
 		position: sticky;
-        grid-template-columns: 30% 70%;
+		grid-template-columns: 30% 70%;
 		grid-template-areas: "top-left top-right"
-    }
-
-    table{
-        grid-area: middle-right1
-    }
-    nav {
-        grid-area: top-right;
-    }
-    .logo{
-        grid-area: top-left;
-    }
-
-
-    nav ul li{
-        display: inline;
-    }
-
-    .panel {
-        display: grid;
-        grid-template-columns: 65% 35%;
-        grid-template-areas: "left1 right1"
-    }
-    .panel figure {
-        grid-area: left1;
-    }
-
-    .panel article {
-		grid-area: right1;
-
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-		
 	}
-
+	table {
+		grid-area: middle-right1
+	}
+	nav {
+		grid-area: top-right;
+	}
+	.logo {
+		grid-area: top-left;
+	}
+	nav ul li {
+		display: inline;
+	}
+	.panel {
+		display: grid;
+		grid-template-columns: 65% 35%;
+		grid-template-areas: "left1 right1"
+	}
+	.panel figure {
+		grid-area: left1;
+	}
+	.panel article {
+		grid-area: right1;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
 	.flex_items article, .flex_items1 article {
 		display: inline-block;
-
 	}
-
 	.flex_items article {
 		width: calc(100% * (1/4) - 10px - 1px);
-
 	}
-
 	footer {
 		width: 100%;
 		display: grid;
 		grid-template-columns: 65% 35%;
 		grid-template-rows: auto;
-	  grid-template-areas: "fleft fright"
+		grid-template-areas: "fleft fright"
 	}
-
 	footer p {
 		grid-area: fleft;
 	}
-
 	footer ul {
 		grid-area: fright;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-
 	footer ul a {
 		margin: 0;
 		padding: 0;
 		padding-left: 0.3em;
 	}
-	
-    
-}  
+}
+
 iframe {
 	max-width: 100%;
 }
@@ -361,27 +335,28 @@ iframe {
 	max-width: 100%;
 	padding: auto;
 }
+
 .media_container article {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
-section.panel.white{
+
+section.panel.white {
 	color: black
 }
-
 
 .blue {
 	background-color: #1D1F21
 }
+
 .turqoise {
 	background-color: #23272A;
 }
 
-.panel.blue p{
+.panel.blue p {
 	color: black;
 }
-
 
 .brown {
 	background-color: #a66f28;
@@ -391,22 +366,27 @@ section.panel.white{
 	background-color: #000000;
 }
 
-.dark{
-	background-image:url("../media/chat2.gif");
+.dark {
+	background-image: url("../media/chat2.gif");
 }
+
 .white {
 	background-color: #292D32;
 }
+
 .red {
 	background-color: #cf3535;
 }
+
 .green {
 	background-color: #22d659;
 }
+
 .orange {
 	background-color: #ea6300;
 }
-.red{
+
+.red {
 	background-image: url("../media/threejs_website.gif");
 }
 
@@ -425,30 +405,27 @@ article {
 	padding: 3em;
 	margin: 1em;
 	list-style: none;
-
-
-	
 }
 
 .flex_items ul li p {
 	background-image: url("../media/circlegraph1.png")
-
 }
 
-.flex_items h1{
+.flex_items h1 {
 	display: block;
 	font-size: 1.5em;
 	text-align: center;
 }
 
-.bordeaux{
-    background-color: #23272A;
+.bordeaux {
+	background-color: #23272A;
 }
 
-#dark_theme_animation{
+#dark_theme_animation {
 	color: black;
 	background-color: white;
 }
+
 article h1 {
 	background-color: #7289DA;
 	color: white;
@@ -458,13 +435,16 @@ article h1 {
 article p {
 	font-size: 1em;
 }
+
 #commands h1 {
 	background-color: black;
 	font-size: 1.5em;
 }
+
 section article {
 	margin-right: 3em;
 }
+
 #seo {
 	background-image: url("../media/linegraph.png")
 }
@@ -473,15 +453,15 @@ section article {
 	background-image: url("../media/silvia_discord3.PNG")
 }
 
-#discord_animation{
+#discord_animation {
 	background-image: url("../media/silvia_discord1.png")
 }
 
-#physics_undefined{
+#physics_undefined {
 	background-image: url("../media/physics_undefined.gif")
 }
 
-#memes{
+#memes {
 	background-image: url("../GIFs/meme_example.gif")
 }
 
@@ -490,14 +470,15 @@ section article {
 }
 
 #dev {
-	background-image: url("../GIFs/linegraph.png")}
+	background-image: url("../GIFs/linegraph.png")
+}
 
 #onyxlabs {
 	background-image: url("../GIFs/background.gif")
 }
 
 .mono {
-	font-family: "ProFontWindows", sans-serif;
+	font-family: "Electrolize", sans-serif;
 }
 
 .logo {
@@ -505,18 +486,17 @@ section article {
 	margin: 0em;
 }
 
-.onxlbs{
-	font-family: "ProFontWindows", sans-serif;
+.onxlbs {
+	font-family: "Electrolize", sans-serif;
 	text-shadow: 0px 0px 5px #0ff;
 	color: black;
-	font-size: 3em;
+	font-size: 2.7em;
 }
 
-.scifi{
+.scifi {
 	background-color: black;
 }
 
-
-  .cityscape{
-	  background-image: url("../media/cityscape.jpg")
-  }
+.cityscape {
+	background-image: url("../media/cityscape.jpg")
+}
