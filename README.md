@@ -8,10 +8,10 @@ as well as on her GitHub README file.
 It includes some notable pages, which may be of important to those who wish to add Onyx to their Discord server.
 
 ## Visit It
-![Onyx's official website is now here!](https://silvia-odwyer.github.io/Onyx-Discord-Bot-Website/ "Onyx's official website is now here!")
+[Click here to visit Onyx's website.](https://silvia-odwyer.github.io/Onyx-Discord-Bot-Website/)
 
 ## Screenshots
-![Onyx + Discord = Love](https://github.com/silvia-odwyer/Onyx-Discord-Bot-Website/blob/master/media/onyxdiscord.png "Onyx + Discord = Love")
+![Onyx + Discord = Love](https://github.com/silvia-odwyer/Onyx-Discord-Bot-Website/blob/master/media/onyxdiscord2.png "Onyx + Discord = Love")
 
 ![Onyx Labs: Experimental division](https://github.com/silvia-odwyer/Onyx-Discord-Bot-Website/blob/master/GIFs/onyx_labs.gif "Onyx Labs: Experimental division")
 
