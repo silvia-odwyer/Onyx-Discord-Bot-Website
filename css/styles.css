@@ -20,6 +20,12 @@ body {
 	font-family: "Titillium Web", sans-serif;
 }
 
+ul {
+	width: 55%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 body, html {
 	height: 100%
 }
@@ -259,9 +265,7 @@ nav ul li a:hover {
 	#vertical article {
 		grid-area: middle-right;
 	}
-	nav {
-		padding-left: 15em;
-	}
+
 	header {
 		display: grid;
 		position: sticky;
