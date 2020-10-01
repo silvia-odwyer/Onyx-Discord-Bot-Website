@@ -5,7 +5,7 @@
 Onyx has her very own home on the Internet now, and all updates to commands tables, features, and more will be posted on this website,
 as well as on her GitHub README file.
 
-It includes some notable pages, which may be of important to those who wish to add Onyx to their Discord server.
+It includes some notable pages, which can be important to those who wish to add Onyx to their Discord server.
 
 ## Visit It
 [Click here to visit Onyx's website.](https://silvia-odwyer.github.io/Onyx-Discord-Bot-Website/)
