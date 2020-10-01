@@ -35,3 +35,6 @@ want to fix something up, submit away! ^^
 ## Test Onyx Out In This Support Server
 If you want to test Onyx out before adding her to your server, [just join this server](https://discord.gg/cSWHaEK), and leave when you want.
 Onyx runs 24/7, so she'll always be online. :D
+
+
+plse i request to do some changes on the era of background images and side pictures with more attracttive feature.plse pull my request!
