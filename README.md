@@ -2,7 +2,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 ![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)
 
-Onyx has her very own home on the Internet now, and all updates to commands tables, features, and more will be posted on this website,
+Onyx has her  own home on the Internet now, and all updates to commands tables, features, and more will be posted on this website,
 as well as on her GitHub README file.
 
 It includes some notable pages, which may be of important to those who wish to add Onyx to their Discord server.
